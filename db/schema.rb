@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
     t.string "name", null: false
     t.text "body"
     t.string "record_type", null: false
-    t.integer "record_id", null: false
+    t.bigint "record_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["record_type", "record_id", "name"], name: "index_action_text_rich_texts_uniqueness", unique: true
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
   end
 
   create_table "active_storage_variant_records", force: :cascade do |t|
-    t.integer "blob_id", null: false
+    t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
@@ -703,7 +703,7 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
 
   create_table "decidim_content_block_attachments", force: :cascade do |t|
     t.string "name"
-    t.integer "decidim_content_block_id", null: false
+    t.bigint "decidim_content_block_id", null: false
     t.index ["decidim_content_block_id"], name: "decidim_content_block_attachments_on_content_block"
   end
 
@@ -767,8 +767,8 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
   end
 
   create_table "decidim_editor_images", force: :cascade do |t|
-    t.integer "decidim_author_id", null: false
-    t.integer "decidim_organization_id", null: false
+    t.bigint "decidim_author_id", null: false
+    t.bigint "decidim_organization_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["decidim_author_id"], name: "decidim_editor_images_author"
@@ -895,7 +895,7 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
     t.index ["decidim_author_type", "decidim_author_id"], name: "idx_endorsements_authors"
     t.index ["decidim_user_group_id"], name: "index_decidim_endorsements_on_decidim_user_group_id"
     t.index ["resource_type", "resource_id", "decidim_author_type", "decidim_author_id", "decidim_user_group_id"], name: "idx_endorsements_rsrcs_and_authors", unique: true
-    t.index ["resource_type", "resource_id"], name: "index_decidim_endorsements_on_resource"
+    t.index ["resource_type", "resource_id"], name: "index_decidim_endorsements_on_resource_type_and_resource_id"
   end
 
   create_table "decidim_follows", force: :cascade do |t|
@@ -1153,8 +1153,8 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
   end
 
   create_table "decidim_meetings_answer_choices", force: :cascade do |t|
-    t.integer "decidim_answer_id"
-    t.integer "decidim_answer_option_id"
+    t.bigint "decidim_answer_id"
+    t.bigint "decidim_answer_option_id"
     t.integer "position"
     t.jsonb "body"
     t.text "custom_body"
@@ -1163,15 +1163,15 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
   end
 
   create_table "decidim_meetings_answer_options", force: :cascade do |t|
-    t.integer "decidim_question_id"
+    t.bigint "decidim_question_id"
     t.jsonb "body"
     t.index ["decidim_question_id"], name: "index_decidim_meetings_answer_options_question_id"
   end
 
   create_table "decidim_meetings_answers", force: :cascade do |t|
-    t.integer "decidim_user_id"
-    t.integer "decidim_questionnaire_id"
-    t.integer "decidim_question_id"
+    t.bigint "decidim_user_id"
+    t.bigint "decidim_questionnaire_id"
+    t.bigint "decidim_question_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["decidim_question_id"], name: "index_decidim_meetings_answers_question_id"
@@ -1247,7 +1247,7 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
   end
 
   create_table "decidim_meetings_polls", force: :cascade do |t|
-    t.integer "decidim_meeting_id"
+    t.bigint "decidim_meeting_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["decidim_meeting_id"], name: "index_decidim_meetings_polls_on_decidim_meeting_id"
@@ -1255,14 +1255,14 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
 
   create_table "decidim_meetings_questionnaires", force: :cascade do |t|
     t.string "questionnaire_for_type"
-    t.integer "questionnaire_for_id"
+    t.bigint "questionnaire_for_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["questionnaire_for_type", "questionnaire_for_id"], name: "index_decidim_meetings_questionnaires_questionnaire_for"
   end
 
   create_table "decidim_meetings_questions", force: :cascade do |t|
-    t.integer "decidim_questionnaire_id"
+    t.bigint "decidim_questionnaire_id"
     t.integer "position"
     t.string "question_type"
     t.jsonb "body"
@@ -1503,7 +1503,7 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
 
   create_table "decidim_participatory_process_types", force: :cascade do |t|
     t.jsonb "title", null: false
-    t.integer "decidim_organization_id"
+    t.bigint "decidim_organization_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["decidim_organization_id"], name: "index_decidim_process_types_on_decidim_organization_id"
@@ -1700,7 +1700,7 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
   end
 
   create_table "decidim_reminder_deliveries", force: :cascade do |t|
-    t.integer "decidim_reminder_id"
+    t.bigint "decidim_reminder_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["decidim_reminder_id"], name: "index_decidim_reminder_deliveries_on_decidim_reminder_id"
@@ -1709,9 +1709,9 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
   create_table "decidim_reminder_records", force: :cascade do |t|
     t.string "state", default: "active"
     t.string "string", default: "active"
-    t.integer "decidim_reminder_id"
+    t.bigint "decidim_reminder_id"
     t.string "remindable_type", null: false
-    t.integer "remindable_id", null: false
+    t.bigint "remindable_id", null: false
     t.index ["decidim_reminder_id"], name: "index_decidim_reminder_records_on_decidim_reminder_id"
     t.index ["remindable_type", "remindable_id"], name: "index_decidim_reminder_records_remindable"
     t.index ["state"], name: "index_decidim_reminder_records_on_state"
@@ -1719,8 +1719,8 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
   end
 
   create_table "decidim_reminders", force: :cascade do |t|
-    t.integer "decidim_user_id", null: false
-    t.integer "decidim_component_id"
+    t.bigint "decidim_user_id", null: false
+    t.bigint "decidim_component_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["decidim_component_id"], name: "index_decidim_reminders_on_decidim_component_id"
@@ -1747,9 +1747,9 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
     t.integer "to_id", null: false
     t.string "name", null: false
     t.jsonb "data"
-    t.index ["from_type", "from_id"], name: "index_decidim_resource_links_on_from"
+    t.index ["from_type", "from_id"], name: "index_decidim_resource_links_on_from_type_and_from_id"
     t.index ["name"], name: "index_decidim_resource_links_on_name"
-    t.index ["to_type", "to_id"], name: "index_decidim_resource_links_on_to"
+    t.index ["to_type", "to_id"], name: "index_decidim_resource_links_on_to_type_and_to_id"
   end
 
   create_table "decidim_resource_permissions", force: :cascade do |t|
@@ -2090,9 +2090,9 @@ ActiveRecord::Schema.define(version: 2022_05_16_135043) do
   end
 
   create_table "decidim_votings_in_person_votes", force: :cascade do |t|
-    t.integer "decidim_elections_election_id", null: false
-    t.integer "decidim_votings_polling_station_id"
-    t.integer "decidim_votings_polling_officer_id"
+    t.bigint "decidim_elections_election_id", null: false
+    t.bigint "decidim_votings_polling_station_id"
+    t.bigint "decidim_votings_polling_officer_id"
     t.string "message_id", null: false
     t.string "voter_id", null: false
     t.integer "status", null: false

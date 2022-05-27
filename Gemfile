@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby RUBY_VERSION
 REPO = 'https://github.com/PopulateTools/decidim.git'
-BRANCH = 'pwa-staging'
+BRANCH = 'redesign-staging'
 
 gem 'decidim', git: REPO, branch: BRANCH
 gem 'decidim-conferences', git: REPO, branch: BRANCH
@@ -22,9 +22,6 @@ gem 'faker', '~> 2.14'
 gem 'sidekiq'
 
 gem 'letter_opener_web', '~> 2'
-
-# Performance
-gem "appsignal", "= 3.0.6"
 
 group :development, :test do
   gem 'decidim-dev', git: REPO, branch: BRANCH
