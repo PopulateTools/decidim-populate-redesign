@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 1ee88d91e4cf510d900f7095ca48123102cf122b
+  revision: e6780f961f944770a482bd28a28ae155ea2bad78
   branch: redesign-staging
   specs:
     decidim (0.27.0.dev)
@@ -558,8 +558,6 @@ GEM
     multipart-post (2.2.3)
     mustache (1.1.1)
     nio4r (2.5.8)
-    nokogiri (1.13.6-arm64-darwin)
-      racc (~> 1.4)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     oauth (0.5.10)
@@ -839,7 +837,6 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
-  arm64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
