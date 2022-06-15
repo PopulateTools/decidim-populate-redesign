@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: d3483f3d7230d0e9aa80ec5e6c48713dd3b54f82
+  revision: 787992f857e54bd4a381562a2545bb0529493953
   branch: redesign-staging
   specs:
     decidim (0.27.0.dev)
