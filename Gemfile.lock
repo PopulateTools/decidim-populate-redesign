@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 2ca28a0e331e576c3153cde436cbaccdda16b5a3
+  revision: 743e9ccec306d7272b06d420b06ff7065f0e3922
   branch: redesign-staging
   specs:
     decidim (0.27.0.dev)
@@ -393,7 +393,7 @@ GEM
     erbse (0.1.4)
       temple
     erubi (1.10.0)
-    escape_utils (1.2.2)
+    escape_utils (1.3.0)
     excon (0.92.3)
     execjs (2.8.1)
     extended-markdown-filter (0.7.0)
