@@ -9,6 +9,7 @@ if [[ $LOCAL_DECIDIM_SHA == $REMOTE_DECIDIM_SHA ]]; then
 fi
 
 rm -f Gemfile.lock &&
+  bundle config --delete frozen &&
   bundle install &&
   bundle lock --add-platform x86_64-linux &&
   rm -rf package* &&
