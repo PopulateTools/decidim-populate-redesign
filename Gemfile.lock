@@ -1,7 +1,7 @@
 GIT
-  remote: https://github.com/PopulateTools/decidim.git
-  revision: 432dc1798cf4e7482b9e1ba4a720fba31452250c
-  branch: redesign-staging
+  remote: https://github.com/decidim/decidim.git
+  revision: 1f2a35eeab2262a9a92f82e21b558b0dd38afed1
+  branch: feature/redesign-staging
   specs:
     decidim (0.27.0.dev)
       decidim-accountability (= 0.27.0.dev)

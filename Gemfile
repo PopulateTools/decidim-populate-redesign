@@ -3,8 +3,8 @@
 source 'https://rubygems.org'
 
 ruby RUBY_VERSION
-REPO = 'https://github.com/PopulateTools/decidim.git'
-BRANCH = 'redesign-staging'
+REPO = 'https://github.com/decidim/decidim.git'
+BRANCH = 'feature/redesign-staging'
 
 gem 'decidim', git: REPO, branch: BRANCH
 gem 'decidim-conferences', git: REPO, branch: BRANCH
