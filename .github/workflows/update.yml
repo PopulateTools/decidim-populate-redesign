@@ -15,10 +15,6 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-      - uses: rokroskar/workflow-run-cleanup-action@v0.3.0
-        if: "github.ref != 'refs/heads/develop'"
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0.2
