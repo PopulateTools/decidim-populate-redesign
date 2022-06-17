@@ -14,5 +14,4 @@ rm -f Gemfile.lock &&
   rm -rf package* &&
   bin/rails decidim:webpacker:install &&
   bin/rails decidim:choose_target_plugins &&
-  bin/rails railties:install:migrations &&
-  gem install bundler --conservative
+  bin/rails railties:install:migrations
