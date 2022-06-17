@@ -35,6 +35,7 @@ jobs:
             npm-
       - run: ./bin/decidim_auto_update.sh
         name: Run decidim auto update
+        shell: "bash"
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
