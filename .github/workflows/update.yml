@@ -1,7 +1,7 @@
 name: "Decidim auto update"
 on: 
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: "*/5 * * * *"
 env:
   RUBY_VERSION: 3.0.2
   NODE_VERSION: 16.9.1
