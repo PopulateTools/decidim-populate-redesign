@@ -1,10 +1,12 @@
 #!/bin/bash
 
 LOCAL_DECIDIM_SHA=$( grep revision Gemfile.lock | awk '{print $2}')
-REMOTE_DECIDIM_SHA=$(git ls-remote https://github.com/decidim/decidim.git | grep feature/redesign-staging)
+REMOTE_DECIDIM_SHA=$(git ls-remote https://github.com/decidim/decidim.git | grep feature/redesign-staging | awk '{print $1}')
 
 if [[ $LOCAL_DECIDIM_SHA == $REMOTE_DECIDIM_SHA ]]; then
-  log "Local and remote Decidim SHA match. Aborting."
+  echo
+  echo "Local and remote Decidim SHA match. Aborting."
+  echo
   exit 0
 fi
 
