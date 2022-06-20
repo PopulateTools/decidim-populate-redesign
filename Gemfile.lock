@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 1f2a35eeab2262a9a92f82e21b558b0dd38afed1
+  revision: 7d748f65415c15e00fa0d732fde7dc06815d14eb
   branch: feature/redesign-staging
   specs:
     decidim (0.27.0.dev)
@@ -581,8 +581,8 @@ GEM
     omniauth-oauth (1.2.0)
       oauth
       omniauth (>= 1.0, < 3)
-    omniauth-oauth2 (1.7.2)
-      oauth2 (~> 1.4)
+    omniauth-oauth2 (1.7.3)
+      oauth2 (>= 1.4, < 3)
       omniauth (>= 1.9, < 3)
     omniauth-rails_csrf_protection (1.0.1)
       actionpack (>= 4.2)
