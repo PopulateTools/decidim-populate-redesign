@@ -1,17 +1,6 @@
 {
   "name": "decidim-redesign",
   "description": "Decidim Redesign",
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-ruby.git"
-    },
-    {
-      "url": "https://github.com/gaffneyc/heroku-buildpack-jemalloc.git" 
-    }
-  ],
   "cron": [
     {
       "command": "bundle exec rake decidim:open_data:export",
