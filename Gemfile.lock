@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: b626fca7b5259443c53f723962465ac61430c475
+  revision: 5d2de753f3ba80f775bfa38eb96da4a4518b147d
   branch: feature/redesign-staging
   specs:
     decidim (0.27.0.dev)
@@ -373,7 +373,7 @@ GEM
       actionmailer (>= 5.0)
       devise (>= 4.6)
     diff-lcs (1.5.0)
-    diffy (3.4.1)
+    diffy (3.4.2)
     doc2text (0.4.5)
       nokogiri (>= 1.13.2, < 1.14.0)
       rubyzip (~> 2.3.0)
@@ -546,7 +546,7 @@ GEM
     mime-types-data (3.2022.0105)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
-    minitest (5.16.0)
+    minitest (5.16.1)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.27)
       tomlrb
