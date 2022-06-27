@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: a93c33c4e99b9ebc855396d3f05c2ac0f0f7a6ac
+  revision: 5662560619ae2874b890e7cadc7b62766ef4d9f8
   branch: feature/redesign-staging
   specs:
     decidim (0.27.0.dev)
@@ -597,7 +597,7 @@ GEM
       activerecord (>= 5.2)
       request_store (~> 1.1)
     parallel (1.22.1)
-    parallel_tests (3.11.0)
+    parallel_tests (3.11.1)
       parallel
     parser (3.1.2.0)
       ast (~> 2.4.1)
@@ -720,7 +720,7 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.18.0)
       parser (>= 3.1.1.0)
-    rubocop-rails (2.15.0)
+    rubocop-rails (2.15.1)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
