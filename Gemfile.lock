@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: d73fb1188f16dc5d92669f20c8bb62fa8131ea1a
+  revision: b205e3b7de2b51c7a35f7bbe82a43193feca0239
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -267,7 +267,7 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.2)
-    axe-core-api (4.4.0)
+    axe-core-api (4.4.1)
       dumb_delegator
       virtus
     axe-core-rspec (4.1.0)
