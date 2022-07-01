@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: b205e3b7de2b51c7a35f7bbe82a43193feca0239
+  revision: 80965704dffb0661acdcb753918a553f96d2bdc0
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -616,7 +616,7 @@ GEM
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
-    rack (2.2.3.1)
+    rack (2.2.4)
     rack-attack (6.6.1)
       rack (>= 1.0, < 3)
     rack-cors (1.1.1)
@@ -670,7 +670,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redcarpet (3.5.1)
-    redis (4.7.0)
+    redis (4.7.1)
     regexp_parser (2.5.0)
     request_store (1.5.1)
       rack (>= 1.4)
