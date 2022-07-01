@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 82e8c1071666b1d11bfd97878dc7d689611ba30e
+  revision: 8d2a2b41d43f200528ccb61b51b137e8c719c252
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -561,7 +561,7 @@ GEM
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     oauth (0.5.10)
-    oauth2 (1.4.9)
+    oauth2 (1.4.10)
       faraday (>= 0.17.3, < 3.0)
       jwt (>= 1.0, < 3.0)
       multi_json (~> 1.3)
