@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 80965704dffb0661acdcb753918a553f96d2bdc0
+  revision: 82e8c1071666b1d11bfd97878dc7d689611ba30e
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -552,7 +552,7 @@ GEM
       tomlrb
     mixlib-shellout (3.2.7)
       chef-utils
-    msgpack (1.5.2)
+    msgpack (1.5.3)
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.2.3)
