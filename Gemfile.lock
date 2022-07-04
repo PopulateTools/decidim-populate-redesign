@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 16ebbf2d801e84ba905befa6572cbd38a55ed434
+  revision: 685c0cf7698c1b1af03a6875edc0f00785728e29
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -546,7 +546,7 @@ GEM
     mime-types-data (3.2022.0105)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
-    minitest (5.16.1)
+    minitest (5.16.2)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.27)
       tomlrb
