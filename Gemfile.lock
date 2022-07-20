@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: c98a3468e33208373592f7aedd930497da184ecf
+  revision: 9f7edc967882c529aaea2333ded3dbc4649845ce
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -785,7 +785,7 @@ GEM
     thread_safe (0.3.6)
     tilt (2.0.10)
     tomlrb (2.0.3)
-    tzinfo (2.0.4)
+    tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
     unicode-display_width (2.2.0)
