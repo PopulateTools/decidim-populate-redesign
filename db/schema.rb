@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_17_192325) do
+ActiveRecord::Schema.define(version: 2022_07_19_153335) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -372,6 +372,9 @@ ActiveRecord::Schema.define(version: 2022_06_17_192325) do
     t.date "selected_at"
     t.integer "comments_count", default: 0, null: false
     t.integer "follows_count", default: 0, null: false
+    t.text "address"
+    t.float "latitude"
+    t.float "longitude"
     t.index ["decidim_budgets_budget_id"], name: "index_decidim_budgets_projects_on_decidim_budgets_budget_id"
     t.index ["decidim_scope_id"], name: "index_decidim_budgets_projects_on_decidim_scope_id"
   end
@@ -1492,8 +1495,8 @@ ActiveRecord::Schema.define(version: 2022_06_17_192325) do
   create_table "decidim_participatory_process_steps", id: :serial, force: :cascade do |t|
     t.jsonb "title", null: false
     t.jsonb "description"
-    t.date "start_date"
-    t.date "end_date"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.integer "decidim_participatory_process_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -2029,6 +2032,8 @@ ActiveRecord::Schema.define(version: 2022_06_17_192325) do
     t.string "notifications_sending_frequency", default: "none"
     t.datetime "digest_sent_at"
     t.jsonb "notification_settings", default: {}
+    t.datetime "password_updated_at"
+    t.string "previous_passwords", default: [], array: true
     t.index ["confirmation_token"], name: "index_decidim_users_on_confirmation_token", unique: true
     t.index ["decidim_organization_id"], name: "index_decidim_users_on_decidim_organization_id"
     t.index ["email", "decidim_organization_id"], name: "index_decidim_users_on_email_and_decidim_organization_id", unique: true, where: "((deleted_at IS NULL) AND (managed = false) AND ((type)::text = 'Decidim::User'::text))"
@@ -2101,7 +2106,7 @@ ActiveRecord::Schema.define(version: 2022_06_17_192325) do
   end
 
   create_table "decidim_votings_census_datasets", force: :cascade do |t|
-    t.string "file"
+    t.string "filename"
     t.integer "status", null: false
     t.integer "data_count"
     t.integer "csv_row_raw_count", null: false
