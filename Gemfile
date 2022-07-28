@@ -24,6 +24,9 @@ gem 'sidekiq'
 gem 'letter_opener_web', '~> 2'
 
 gem "matrix"
+gem 'net-smtp'
+gem 'net-imap'
+gem 'net-pop'
 
 group :development, :test do
   gem 'decidim-dev', git: REPO, branch: BRANCH
