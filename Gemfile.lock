@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 65f54fc5c819cb8bee010212fc8811569f5e6195
+  revision: 2a6e59951524144190fa40f15b8676676fc773e9
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -293,7 +293,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.12.0)
+    bootsnap (1.13.0)
       msgpack (~> 1.2)
     browser (2.7.1)
     builder (3.2.4)
