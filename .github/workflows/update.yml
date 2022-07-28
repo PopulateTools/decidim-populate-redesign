@@ -3,7 +3,7 @@ on:
   schedule:
     - cron: "*/5 * * * *"
 env:
-  RUBY_VERSION: 3.0.2
+  RUBY_VERSION: 3.1.1
   NODE_VERSION: 16.9.1
   REDIS_URL:
 
@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0.2
+          ruby-version: 3.1.1
       - uses: actions/setup-node@v1
         with:
           node-version: 16.13.0
