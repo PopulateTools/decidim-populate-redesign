@@ -23,6 +23,8 @@ gem 'sidekiq'
 
 gem 'letter_opener_web', '~> 2'
 
+gem "matrix"
+
 group :development, :test do
   gem 'decidim-dev', git: REPO, branch: BRANCH
 
