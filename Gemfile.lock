@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 8c39df706ca7fbe4c4bbaf9cc1a3e1fcdb90b2c0
+  revision: 30c22de36072d950be3a5f62c5f3ca11510bdd81
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -835,7 +835,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webmock (3.14.0)
+    webmock (3.15.0)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
