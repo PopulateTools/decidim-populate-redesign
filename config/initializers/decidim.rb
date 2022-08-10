@@ -19,7 +19,7 @@ Decidim.configure do |config|
   # this value for that specific organization.
   config.default_locale = :en
 
-  config.redesign_active = true
+  config.redesign_active = false
 
   # Restrict access to the system part with an authorized ip list.
   # You can use a single ip like ("1.2.3.4"), or an ip subnet like ("1.2.3.4/24")
