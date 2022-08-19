@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 149a72e1741f3975d4eb2c6c68500caa321eb0bd
+  revision: c693faaeaf2e20804b0703bd04244e2b97d8a438
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -267,8 +267,8 @@ GEM
       zeitwerk (~> 2.3)
     acts_as_list (1.0.4)
       activerecord (>= 4.2)
-    addressable (2.8.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     axe-core-api (4.4.1)
       dumb_delegator
@@ -614,7 +614,7 @@ GEM
       actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
     psych (3.3.2)
-    public_suffix (4.0.7)
+    public_suffix (5.0.0)
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
