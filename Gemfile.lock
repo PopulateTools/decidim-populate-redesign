@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 9429106a18395736124a0cfa3f989a4889aac4bc
+  revision: fe60407565d316e3e44333b037a89b21bdc5d03f
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -561,7 +561,11 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
-    oauth (1.0.0)
+    oauth (1.1.0)
+      oauth-tty (~> 1.0, >= 1.0.1)
+      snaky_hash (~> 2.0)
+      version_gem (~> 1.1)
+    oauth-tty (1.0.2)
       version_gem (~> 1.1)
     oauth2 (1.4.10)
       faraday (>= 0.17.3, < 3.0)
@@ -765,6 +769,9 @@ GEM
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
     smart_properties (1.17.0)
+    snaky_hash (2.0.0)
+      hashie
+      version_gem (~> 1.1)
     social-share-button (1.2.4)
       coffee-rails
     spring (2.1.1)
