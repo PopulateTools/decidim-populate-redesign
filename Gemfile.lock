@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 6adaef20d0dfeb41d3154e3a012fcfe54012676e
+  revision: aeee2f390eefd1e62d499c9f05fd52b0625135e7
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -603,7 +603,7 @@ GEM
       activerecord (>= 5.2)
       request_store (~> 1.1)
     parallel (1.22.1)
-    parallel_tests (3.11.1)
+    parallel_tests (3.12.0)
       parallel
     parser (3.1.2.1)
       ast (~> 2.4.1)
