@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 5c800e1785ab58a4b6a8f25b3428536d54e73de8
+  revision: fd61f926f1043bbbd053dc62ebf363def6d7ae12
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -785,7 +785,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    ssrf_filter (1.1.0)
+    ssrf_filter (1.1.1)
     strscan (3.0.4)
     temple (0.8.2)
     terminal-table (3.0.2)
