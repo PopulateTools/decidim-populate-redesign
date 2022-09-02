@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 40a4ddddcea825e40d8e26968d961d5b21e8550c
+  revision: e38713b5e8673fee769ac72c243a8e70c92e5f18
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -405,7 +405,7 @@ GEM
     factory_bot_rails (4.11.1)
       factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
-    faker (2.22.0)
+    faker (2.23.0)
       i18n (>= 1.8.11, < 2)
     faraday (1.10.2)
       faraday-em_http (~> 1.0)
