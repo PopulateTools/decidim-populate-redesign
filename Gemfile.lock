@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 7ee0ca7f28881872979dad1355922cf16a2555f9
+  revision: 72658f2981313863e3f0e04aca1960cac8df559e
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -540,7 +540,6 @@ GEM
     mini_mime (1.1.2)
     minitest (5.16.3)
     msgpack (1.5.6)
-    multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.2.3)
     mustache (1.1.1)
@@ -567,29 +566,30 @@ GEM
       version_gem (~> 1.1)
     oauth-tty (1.0.2)
       version_gem (~> 1.1)
-    oauth2 (1.4.10)
+    oauth2 (2.0.8)
       faraday (>= 0.17.3, < 3.0)
       jwt (>= 1.0, < 3.0)
-      multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
+      snaky_hash (~> 2.0)
+      version_gem (~> 1.1)
     omniauth (2.1.0)
       hashie (>= 3.4.6)
       rack (>= 2.2.3)
       rack-protection
     omniauth-facebook (5.0.0)
       omniauth-oauth2 (~> 1.2)
-    omniauth-google-oauth2 (1.0.1)
+    omniauth-google-oauth2 (1.1.0)
       jwt (>= 2.0)
-      oauth2 (~> 1.1)
+      oauth2 (~> 2.0.6)
       omniauth (~> 2.0)
-      omniauth-oauth2 (~> 1.7.1)
+      omniauth-oauth2 (~> 1.8.0)
     omniauth-oauth (1.2.0)
       oauth
       omniauth (>= 1.0, < 3)
-    omniauth-oauth2 (1.7.3)
+    omniauth-oauth2 (1.8.0)
       oauth2 (>= 1.4, < 3)
-      omniauth (>= 1.9, < 3)
+      omniauth (~> 2.0)
     omniauth-rails_csrf_protection (1.0.1)
       actionpack (>= 4.2)
       omniauth (~> 2.0)
