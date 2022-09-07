@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 72658f2981313863e3f0e04aca1960cac8df559e
+  revision: 51922fddd940f4b60256738bceb0d4bf0aff6215
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -564,7 +564,7 @@ GEM
       oauth-tty (~> 1.0, >= 1.0.1)
       snaky_hash (~> 2.0)
       version_gem (~> 1.1)
-    oauth-tty (1.0.2)
+    oauth-tty (1.0.3)
       version_gem (~> 1.1)
     oauth2 (2.0.8)
       faraday (>= 0.17.3, < 3.0)
@@ -579,7 +579,7 @@ GEM
       rack-protection
     omniauth-facebook (5.0.0)
       omniauth-oauth2 (~> 1.2)
-    omniauth-google-oauth2 (1.1.0)
+    omniauth-google-oauth2 (1.1.1)
       jwt (>= 2.0)
       oauth2 (~> 2.0.6)
       omniauth (~> 2.0)
