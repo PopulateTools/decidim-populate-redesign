@@ -558,6 +558,8 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.8-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
     oauth (1.1.0)
@@ -603,7 +605,7 @@ GEM
       activerecord (>= 5.2)
       request_store (~> 1.1)
     parallel (1.22.1)
-    parallel_tests (3.12.0)
+    parallel_tests (3.12.1)
       parallel
     parser (3.1.2.1)
       ast (~> 2.4.1)
@@ -713,7 +715,7 @@ GEM
       rspec-support (~> 3.10)
     rspec-retry (0.6.2)
       rspec-core (> 3.3)
-    rspec-support (3.11.0)
+    rspec-support (3.11.1)
     rspec_junit_formatter (0.3.0)
       rspec-core (>= 2, < 4, != 2.12.0)
     rubocop (1.28.2)
@@ -852,6 +854,7 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
+  arm64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
