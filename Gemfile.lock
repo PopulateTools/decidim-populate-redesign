@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: f0c01d7b25d0d9f3433df7ce0a9c0b6189bca0d8
+  revision: 459b23439e5673aab173c63e1164067a699ab2ee
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -797,7 +797,7 @@ GEM
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
-    unicode-display_width (2.2.0)
+    unicode-display_width (2.3.0)
     valid_email2 (4.0.4)
       activemodel (>= 3.2)
       mail (~> 2.5)
