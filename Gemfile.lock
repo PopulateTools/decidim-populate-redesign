@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: e739f0cc879b6c7cd2c90888d015cde4aa1cfa9f
+  revision: d6f207e5be1efdc4eb20eea3483b833829d99c0d
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -564,7 +564,7 @@ GEM
       oauth-tty (~> 1.0, >= 1.0.1)
       snaky_hash (~> 2.0)
       version_gem (~> 1.1)
-    oauth-tty (1.0.4)
+    oauth-tty (1.0.5)
       version_gem (~> 1.1, >= 1.1.1)
     oauth2 (2.0.9)
       faraday (>= 0.17.3, < 3.0)
