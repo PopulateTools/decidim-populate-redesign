@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 38f4800f0320934d82b9c9945b1f43f79e5e5343
+  revision: 5e31754cd0d4e479283fd8389fb164dd549fc7f2
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -375,7 +375,6 @@ GEM
       devise (>= 4.6)
     diff-lcs (1.5.0)
     diffy (3.4.2)
-    digest (3.1.0)
     doc2text (0.4.5)
       nokogiri (>= 1.13.2, < 1.14.0)
       rubyzip (~> 2.3.0)
@@ -543,14 +542,10 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.2.3)
     mustache (1.1.1)
-    net-imap (0.2.3)
-      digest
+    net-imap (0.3.0)
       net-protocol
-      strscan
-    net-pop (0.1.1)
-      digest
+    net-pop (0.1.2)
       net-protocol
-      timeout
     net-protocol (0.1.3)
       timeout
     net-smtp (0.3.2)
@@ -784,7 +779,6 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     ssrf_filter (1.1.1)
-    strscan (3.0.4)
     temple (0.8.2)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
