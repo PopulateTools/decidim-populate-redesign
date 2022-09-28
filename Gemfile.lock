@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: af51af9c4d769f83e4b8a52cd20cadc512fca32d
+  revision: 38f4800f0320934d82b9c9945b1f43f79e5e5343
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -450,7 +450,7 @@ GEM
       activesupport (>= 4.1, < 7.1)
       railties (>= 4.1, < 7.1)
     gemoji (3.0.1)
-    geocoder (1.8.0)
+    geocoder (1.8.1)
     globalid (1.0.0)
       activesupport (>= 5.0)
     graphlient (0.5.0)
@@ -553,10 +553,8 @@ GEM
       timeout
     net-protocol (0.1.3)
       timeout
-    net-smtp (0.3.1)
-      digest
+    net-smtp (0.3.2)
       net-protocol
-      timeout
     nio4r (2.5.8)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
@@ -603,7 +601,7 @@ GEM
       activerecord (>= 5.2)
       request_store (~> 1.1)
     parallel (1.22.1)
-    parallel_tests (3.12.1)
+    parallel_tests (3.13.0)
       parallel
     parser (3.1.2.1)
       ast (~> 2.4.1)
@@ -618,7 +616,7 @@ GEM
     premailer-rails (1.11.1)
       actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
-    psych (3.3.3)
+    psych (3.3.4)
     public_suffix (5.0.0)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -628,7 +626,7 @@ GEM
       rack (>= 1.0, < 3)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
-    rack-protection (2.2.2)
+    rack-protection (3.0.1)
       rack
     rack-proxy (0.7.4)
       rack
@@ -678,7 +676,7 @@ GEM
       ffi (~> 1.0)
     redcarpet (3.5.1)
     redis (4.8.0)
-    regexp_parser (2.5.0)
+    regexp_parser (2.6.0)
     request_store (1.5.1)
       rack (>= 1.4)
     responders (3.0.1)
@@ -769,9 +767,9 @@ GEM
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
     smart_properties (1.17.0)
-    snaky_hash (2.0.0)
+    snaky_hash (2.0.1)
       hashie
-      version_gem (~> 1.1)
+      version_gem (~> 1.1, >= 1.1.1)
     social-share-button (1.2.4)
       coffee-rails
     spring (2.1.1)
