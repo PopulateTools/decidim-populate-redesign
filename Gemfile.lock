@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 9d9799d7533f54a7c3b1728f0b3af838bdab2a16
+  revision: 5f07235f4fa97f512e627149c3d1941985d4a21b
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -525,7 +525,7 @@ GEM
     net-smtp (0.3.2)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.8-x86_64-linux)
+    nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
     oauth (1.1.0)
       oauth-tty (~> 1.0, >= 1.0.1)
