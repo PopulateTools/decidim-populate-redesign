@@ -17,6 +17,7 @@ fi
 
 log "Setup bundler and dependencies" && rm -f Gemfile.lock && bundle config --delete frozen && bundle install && bundle lock --add-platform x86_64-linux
 log "Clear packages" && rm -rf package*
+log "Run Turbo task isolated (it does not work within decidim:webpacker:install)" && bin/rails turbo:install
 log "Updating decidim webpacker config" && bin/rails decidim:webpacker:install
 log "Installing decidim new migrations" && bin/rails decidim:choose_target_plugins && bin/rails railties:install:migrations
 log "Updating application" && bin/update
