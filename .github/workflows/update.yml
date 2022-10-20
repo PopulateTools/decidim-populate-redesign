@@ -1,5 +1,5 @@
 name: "Decidim auto update"
-on: 
+on:
   schedule:
     - cron: "*/10 7-19 * * 1-5"
 env:
@@ -22,7 +22,7 @@ jobs:
         run: |
           LOCAL_DECIDIM_SHA=$(grep revision Gemfile.lock | awk '{print $2}')
           REMOTE_DECIDIM_SHA=$(git ls-remote https://github.com/decidim/decidim.git | grep feature/redesign-staging | awk '{print $1}')
-          [[ $LOCAL_DECIDIM_SHA == $REMOTE_DECIDIM_SHA ]] && ( echo "Local and remote Decidim SHA match. Aborting."; exit 1; ) || exit 0
+          [[ $LOCAL_DECIDIM_SHA == $REMOTE_DECIDIM_SHA ]] && { echo "Local and remote Decidim SHA match. Aborting."; exit 1; } || exit 0
       - uses: ruby/setup-ruby@v1
         if: ${{ success() }}
         with:
