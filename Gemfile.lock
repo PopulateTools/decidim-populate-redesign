@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 758ef10c7e76ca432bb2661f6f27780d63e02752
+  revision: 28720342be811d802122614380e30436e16e3aa0
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -692,7 +692,7 @@ GEM
       rubocop-ast (>= 1.17.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.22.0)
+    rubocop-ast (1.23.0)
       parser (>= 3.1.1.0)
     rubocop-faker (1.1.0)
       faker (>= 2.12.0)
