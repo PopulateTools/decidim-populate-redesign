@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 18c034f49f35519864e40eaa4276cbdf303831d7
+  revision: 7ba70c92631d09d224165c3e02aa178c6f2c783d
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -757,7 +757,7 @@ GEM
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.0)
-    turbo-rails (1.3.1)
+    turbo-rails (1.3.2)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
