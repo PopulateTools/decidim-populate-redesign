@@ -23,11 +23,13 @@ jobs:
         run: |
           LOCAL_DECIDIM_SHA=$(grep revision Gemfile.lock | awk '{print $2}')
           REMOTE_DECIDIM_SHA=$(git ls-remote https://github.com/decidim/decidim.git | grep feature/redesign-staging | awk '{print $1}')
+          echo "Local hash: ${LOCAL_DECIDIM_SHA}";
+          echo "Remote hash: ${REMOTE_DECIDIM_SHA}";
           if [[ "${LOCAL_DECIDIM_SHA}" == "${REMOTE_DECIDIM_SHA}" ]]; then
             echo "Local and remote Decidim SHA match. Aborting.";
-            echo "has_changes=false" >> $GITHUB_OUTPUT;
+            echo "has_changes=false" >> "$GITHUB_OUTPUT";
           else
-            echo "has_changes=true" >> $GITHUB_OUTPUT;
+            echo "has_changes=true" >> "$GITHUB_OUTPUT";
           fi
 
   main:
