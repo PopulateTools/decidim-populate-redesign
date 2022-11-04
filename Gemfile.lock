@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: b0374901eb230d9d31b627b6010038e31b220cc4
+  revision: 20662537f6767af8acec0ae23700b4df6723f1e7
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -724,7 +724,7 @@ GEM
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
     seven_zip_ruby (1.3.0)
-    sidekiq (7.0.0)
+    sidekiq (7.0.1)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
       rack (>= 2.2.4)
