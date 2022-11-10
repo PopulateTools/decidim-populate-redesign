@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 3e3eca9125428bd07f8b61acac4b4125a92dea7f
+  revision: a89e449f825552cdb7c38381a1aab0d80ebbd5e3
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -582,8 +582,9 @@ GEM
       addressable
       css_parser (>= 1.12.0)
       htmlentities (>= 4.0.0)
-    premailer-rails (1.11.1)
+    premailer-rails (1.12.0)
       actionmailer (>= 3)
+      net-smtp
       premailer (~> 1.7, >= 1.7.9)
     psych (3.3.4)
     public_suffix (5.0.0)
