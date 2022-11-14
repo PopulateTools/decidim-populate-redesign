@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 0e0321b2602553c5b6162b6bb5ec81282c185242
+  revision: ef628b479d3b94466efe2982d6d059bc5f91d558
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -596,7 +596,7 @@ GEM
       rack (>= 1.0, < 3)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
-    rack-protection (3.0.2)
+    rack-protection (3.0.3)
       rack
     rack-proxy (0.7.4)
       rack
