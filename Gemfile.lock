@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 6add68564fe783a281301862bea6d301f229694f
+  revision: 826befbdd093a74bf7c86721cca17dbc1f276690
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -294,7 +294,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    carrierwave (2.2.2)
+    carrierwave (2.2.3)
       activemodel (>= 5.0.0)
       activesupport (>= 5.0.0)
       addressable (~> 2.6)
