@@ -73,6 +73,6 @@ jobs:
         uses: dokku/github-action@master
         with:
           # specify the `main` branch as the remote branch to push to
-          branch: 'master'
+          branch: 'main'
           git_remote_url: 'ssh://dokku@server-staging03.populate.tools/~/decidim-populate-redesign'
           ssh_private_key: ${{ secrets.DOKKU_DEPLOY_SSH_KEY }}
