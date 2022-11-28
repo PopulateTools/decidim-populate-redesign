@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 3aaa0226e0c6c6f62b3e7b68961a5eb93f7fb95f
+  revision: 74ed39df7547efe7315966c4333178edd8971c0f
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -356,7 +356,7 @@ GEM
       nokogiri (>= 1.13.2, < 1.14.0)
       rubyzip (~> 2.3.0)
     docile (1.4.0)
-    doorkeeper (5.6.0)
+    doorkeeper (5.6.1)
       railties (>= 5)
     doorkeeper-i18n (4.0.1)
     erb_lint (0.0.37)
