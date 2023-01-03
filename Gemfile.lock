@@ -773,7 +773,7 @@ GEM
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
-    unicode-display_width (2.3.0)
+    unicode-display_width (2.4.0)
     valid_email2 (4.0.4)
       activemodel (>= 3.2)
       mail (~> 2.5)
