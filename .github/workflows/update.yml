@@ -2,6 +2,8 @@ name: "Decidim auto update"
 on:
   schedule:
     - cron: "*/10 3-19 * * *"
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 env:
   RUBY_VERSION: 3.1.1
   NODE_VERSION: 16.9.1
