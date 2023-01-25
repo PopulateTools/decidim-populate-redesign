@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 08000357960f1f92af852f4cb4682a48242b6d82
+  revision: 3e165ed87dc800585116a507cf7708f84fd37d62
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -583,7 +583,7 @@ GEM
     pg_search (2.3.6)
       activerecord (>= 5.2)
       activesupport (>= 5.2)
-    premailer (1.18.0)
+    premailer (1.19.0)
       addressable
       css_parser (>= 1.12.0)
       htmlentities (>= 4.0.0)
