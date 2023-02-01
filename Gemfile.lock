@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: b0c21c9ab2d2ea8d001d316178eff301e6b2fcf8
+  revision: 986476795bbdf6b370629fc9b2eab45debf2bde4
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -264,7 +264,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
-    acts_as_list (1.0.4)
+    acts_as_list (1.1.0)
       activerecord (>= 4.2)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
