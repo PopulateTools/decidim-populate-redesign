@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: b7d0ba2b5fd866ac551897f5fb30dea3cac5ee57
+  revision: e9c16ac9c2a57662ff253008ed7f658a8da36643
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -651,7 +651,7 @@ GEM
       ffi (~> 1.0)
     redcarpet (3.6.0)
     redis (4.8.1)
-    redis-client (0.12.1)
+    redis-client (0.12.2)
       connection_pool
     regexp_parser (2.7.0)
     request_store (1.5.1)
