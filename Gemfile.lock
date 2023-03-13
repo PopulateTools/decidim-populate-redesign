@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 15c1469f1f4e268e79de777e6b3876bdd5e4081f
+  revision: e1a0f28618de4f5f5aa1b180dd08a5d13ee93a27
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -596,7 +596,7 @@ GEM
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.2)
-    rack (2.2.6.3)
+    rack (2.2.6.4)
     rack-attack (6.6.1)
       rack (>= 1.0, < 3)
     rack-cors (1.1.1)
