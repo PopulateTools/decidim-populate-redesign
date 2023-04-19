@@ -22,6 +22,7 @@ gem 'faker', '~> 2.14'
 gem 'sidekiq'
 
 gem 'letter_opener_web', '~> 2'
+gem "aws-sdk-s3", require: false
 
 gem "matrix"
 gem 'net-smtp'
