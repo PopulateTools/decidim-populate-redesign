@@ -7,11 +7,11 @@ REPO = 'https://github.com/decidim/decidim.git'
 BRANCH = 'feature/redesign-staging'
 
 gem 'decidim', git: REPO, branch: BRANCH
-gem 'decidim-conferences', git: REPO, branch: BRANCH
-gem 'decidim-consultations', git: REPO, branch: BRANCH
-gem 'decidim-elections', git: REPO, branch: BRANCH
 gem 'decidim-initiatives', git: REPO, branch: BRANCH
+gem 'decidim-consultations', git: REPO, branch: BRANCH
+gem 'decidim-conferences', git: REPO, branch: BRANCH
 gem 'decidim-templates', git: REPO, branch: BRANCH
+# gem 'decidim-elections', git: REPO, branch: BRANCH
 
 gem 'bootsnap', '~> 1.4'
 
