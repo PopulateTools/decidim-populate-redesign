@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 8c1b66b1cebcd953928608abc6f1886189f729ad
+  revision: 09ea2c198b20785ea0439a613ab7c135e022aae5
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
