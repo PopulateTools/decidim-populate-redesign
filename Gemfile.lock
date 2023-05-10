@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: c384532ab6e1f01bfc75fb458adc6cf3b6c982ac
+  revision: c9f3d7391568bc8d276333890859fb8ecec178c8
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -515,7 +515,7 @@ GEM
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.21.0)
+    loofah (2.21.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.8.1)
