@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 4d9aff9d6e426d82cf0f869d3a344dd5579bf4e9
+  revision: 89a638f34093ad44469dc887c09fcdef41ad8394
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -532,7 +532,7 @@ GEM
     mini_magick (4.12.0)
     mini_mime (1.1.2)
     minitest (5.18.0)
-    msgpack (1.7.0)
+    msgpack (1.7.1)
     multi_xml (0.6.0)
     multipart-post (2.3.0)
     mustache (1.1.1)
