@@ -468,7 +468,7 @@ GEM
       nokogiri (>= 1.4)
     html_tokenizer (0.0.7)
     htmlentities (4.3.4)
-    i18n (1.13.0)
+    i18n (1.14.0)
       concurrent-ruby (~> 1.0)
     i18n-tasks (0.9.37)
       activesupport (>= 4.0.2)
