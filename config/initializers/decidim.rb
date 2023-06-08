@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 Decidim.configure do |config|
-# The name of the application
-  config.application_name = "My Application Name"
+  # The name of the application
+  config.application_name = Rails.application.secrets.decidim[:application_name]
 
   # The email that will be used as sender in all emails from Decidim
-  config.mailer_sender = Rails.application.secrets.mailer_sender
+  config.mailer_sender = Rails.application.secrets.decidim[:mailer_sender]
 
   # Sets the list of available locales for the whole application.
   #
@@ -11,11 +13,9 @@ Decidim.configure do |config|
   # be able to choose the available languages for that organization. That list
   # of languages will be equal or a subset of the list in this file.
   config.available_locales = [:en, :ca, :es]
-
-  # Sets the default locale for new organizations. When creating a new
-  # organization from the System area, system admins will be able to overwrite
-  # this value for that specific organization.
   config.default_locale = :en
+  # Or block set it up manually and prevent ENV manipulation:
+  # config.available_locales = %w(en ca es)
 
   config.redesign_active = true
 
@@ -39,13 +39,18 @@ Decidim.configure do |config|
   config.service_worker_enabled = Rails.application.secrets.decidim[:service_worker_enabled].present?
 
   # Sets the list of static pages' slugs that can include content blocks.
-  # By default is only enabled in the terms-and-conditions static page to allow a summary to be added and include
+  # By default is only enabled in the terms-of-service static page to allow a summary to be added and include
   # sections with a two-pane view
-  config.page_blocks = Rails.application.secrets.decidim[:page_blocks].presence || %w(terms-and-conditions)
+  config.page_blocks = Rails.application.secrets.decidim[:page_blocks].presence || %w(terms-of-service)
 
   # Map and Geocoder configuration
   #
   # == HERE Maps ==
+  # config.maps = {
+  #   provider: :here,
+  #   api_key: Rails.application.secrets.maps[:api_key],
+  #   static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
+  # }
   config.maps = {
     provider: :here,
     api_key: Rails.application.secrets.maps[:api_key],
@@ -393,7 +398,8 @@ Decidim.configure do |config|
   end
   config.follow_http_x_forwarded_host = Rails.application.secrets.decidim[:follow_http_x_forwarded_host].present?
   config.maximum_conversation_message_length = Rails.application.secrets.decidim[:maximum_conversation_message_length].to_i
-  config.password_blacklist = Rails.application.secrets.decidim[:password_blacklist] if Rails.application.secrets.decidim[:password_blacklist].present?
+  config.password_similarity_length = Rails.application.secrets.decidim[:password_similarity_length] if Rails.application.secrets.decidim[:password_similarity_length].present?
+  config.denied_passwords = Rails.application.secrets.decidim[:denied_passwords] if Rails.application.secrets.decidim[:denied_passwords].present?
   config.allow_open_redirects = Rails.application.secrets.decidim[:allow_open_redirects] if Rails.application.secrets.decidim[:allow_open_redirects].present?
 end
 
