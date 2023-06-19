@@ -447,7 +447,7 @@ GEM
       faraday (>= 1.0)
       faraday_middleware
       graphql-client
-    graphql (2.0.22)
+    graphql (2.0.23)
     graphql-client (0.18.0)
       activesupport (>= 3.0)
       graphql
