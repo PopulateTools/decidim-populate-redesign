@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: db45d11f2423409737a0e21025e58edd9fd3f547
+  revision: b5196f40d928aaf9414d0996d6bd0907562a4d8f
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -270,19 +270,19 @@ GEM
     ast (2.4.2)
     aws-eventstream (1.2.0)
     aws-partitions (1.782.0)
-    aws-sdk-core (3.175.0)
+    aws-sdk-core (3.176.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.67.0)
-      aws-sdk-core (~> 3, >= 3.174.0)
+    aws-sdk-kms (1.68.0)
+      aws-sdk-core (~> 3, >= 3.176.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.126.0)
-      aws-sdk-core (~> 3, >= 3.174.0)
+    aws-sdk-s3 (1.127.0)
+      aws-sdk-core (~> 3, >= 3.176.0)
       aws-sdk-kms (~> 1)
-      aws-sigv4 (~> 1.4)
-    aws-sigv4 (1.5.2)
+      aws-sigv4 (~> 1.6)
+    aws-sigv4 (1.6.0)
       aws-eventstream (~> 1, >= 1.0.2)
     batch-loader (1.5.0)
     bcrypt (3.1.19)
