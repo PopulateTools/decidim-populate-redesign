@@ -409,7 +409,7 @@ Decidim.configure do |config|
     "img-src" => %w('self' *.hereapi.com data: metadecidim-redesign-staging.s3.eu-west-1.amazonaws.com),
     "font-src" => %w('self'),
     "connect-src" => %w('self' *.hereapi.com *.jsdelivr.net),
-    "frame-src" => %w('self'),
+    "frame-src" => %w('self' *.youtube.com),
     "media-src" => %w('self')
   }
 end
