@@ -401,6 +401,17 @@ Decidim.configure do |config|
   config.password_similarity_length = Rails.application.secrets.decidim[:password_similarity_length] if Rails.application.secrets.decidim[:password_similarity_length].present?
   config.denied_passwords = Rails.application.secrets.decidim[:denied_passwords] if Rails.application.secrets.decidim[:denied_passwords].present?
   config.allow_open_redirects = Rails.application.secrets.decidim[:allow_open_redirects] if Rails.application.secrets.decidim[:allow_open_redirects].present?
+
+  config.content_security_policies_extra = {
+    "default-src" => %w('self' 'unsafe-inline'),
+    "script-src" => %w('self' 'unsafe-inline' 'unsafe-eval'),
+    "style-src" => %w('self' 'unsafe-inline'),
+    "img-src" => %w('self' *.hereapi.com data: metadecidim-redesign-staging.s3.eu-west-1.amazonaws.com),
+    "font-src" => %w('self'),
+    "connect-src" => %w('self' *.hereapi.com *.jsdelivr.net),
+    "frame-src" => %w('self'),
+    "media-src" => %w('self')
+  }
 end
 
 if Decidim.module_installed? :api
