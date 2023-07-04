@@ -15,9 +15,9 @@ gem 'decidim-templates', git: REPO, branch: BRANCH
 
 gem 'bootsnap', '~> 1.4'
 
-gem "puma", '>= 5.5.1'
+gem "puma"
 
-gem 'faker', '~> 2.14'
+gem 'faker'
 
 gem 'sidekiq'
 
