@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: e24f5371d2d01afd8cd0f8e6a02af5c75e8ea26d
+  revision: 82a52d71cea77c13d1e6c965bbc0c13c0dcbba89
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -436,7 +436,7 @@ GEM
       activesupport (>= 4.1, < 7.1)
       railties (>= 4.1, < 7.1)
     gemoji (3.0.1)
-    geocoder (1.8.1)
+    geocoder (1.8.2)
     globalid (1.1.0)
       activesupport (>= 5.0)
     graphlient (0.5.0)
