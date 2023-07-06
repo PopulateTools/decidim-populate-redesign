@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 82a52d71cea77c13d1e6c965bbc0c13c0dcbba89
+  revision: 298d015ed14b1e633ee140f913b857c7107fcdc7
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -277,7 +277,7 @@ GEM
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.68.0)
+    aws-sdk-kms (1.69.0)
       aws-sdk-core (~> 3, >= 3.176.0)
       aws-sigv4 (~> 1.1)
     aws-sdk-s3 (1.127.0)
