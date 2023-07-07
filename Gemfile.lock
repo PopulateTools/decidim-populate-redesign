@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 6d5976c891ae90c76a4e6dcf9c3c8c48b869df45
+  revision: 557656332eabb95bce6184ed273ef9bf41e88690
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -542,8 +542,6 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.14.5-arm64-darwin)
-      racc (~> 1.4)
     nokogiri (1.14.5-x86_64-linux)
       racc (~> 1.4)
     oauth (1.1.0)
@@ -849,7 +847,6 @@ GEM
     zeitwerk (2.6.8)
 
 PLATFORMS
-  arm64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
