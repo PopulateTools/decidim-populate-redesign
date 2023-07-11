@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 616d5e1f514c72e313513ca230d1e8aaa6c44ca1
+  revision: 67fda9794bf621c25cedf8f20fde40974d204da8
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -607,7 +607,7 @@ GEM
       premailer (~> 1.7, >= 1.7.9)
     psych (4.0.6)
       stringio
-    public_suffix (5.0.1)
+    public_suffix (5.0.3)
     puma (6.3.0)
       nio4r (~> 2.0)
     racc (1.7.1)
