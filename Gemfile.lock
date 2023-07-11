@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: f157ddae21ce84f8545ae0fe9b29a02d146c0148
+  revision: 55082dcfca47d908b55b863bf5aa5397db0deb63
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -272,15 +272,15 @@ GEM
     ast (2.4.2)
     aws-eventstream (1.2.0)
     aws-partitions (1.785.0)
-    aws-sdk-core (3.177.0)
+    aws-sdk-core (3.178.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.70.0)
+    aws-sdk-kms (1.71.0)
       aws-sdk-core (~> 3, >= 3.177.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.128.0)
+    aws-sdk-s3 (1.129.0)
       aws-sdk-core (~> 3, >= 3.177.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.6)
