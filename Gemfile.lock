@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: b5b5755e6c449b1a28fefbeb0d7cf3c462120922
+  revision: e282df40950438f1f2f1b9a3cc1ad7d8f60242bf
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -73,7 +73,7 @@ GIT
       devise (~> 4.7)
       devise-i18n (~> 1.2)
       diffy (~> 3.3)
-      doorkeeper (>= 5.6.6)
+      doorkeeper (~> 5.6, >= 5.6.6)
       doorkeeper-i18n (~> 4.0)
       file_validators (~> 3.0)
       fog-local (~> 0.6)
@@ -99,7 +99,7 @@ GIT
       psych (~> 4.0)
       rack (~> 2.2, >= 2.2.6.4)
       rack-attack (~> 6.0)
-      rails (~> 6.1.7, >= 6.1.7.3)
+      rails (~> 6.1.7, >= 6.1.7.4)
       rails-i18n (~> 6.0)
       ransack (~> 3.2.1)
       redis (~> 4.1)
@@ -271,7 +271,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.786.0)
+    aws-partitions (1.788.0)
     aws-sdk-core (3.178.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -528,7 +528,7 @@ GEM
     mini_magick (4.12.0)
     mini_mime (1.1.2)
     minitest (5.18.1)
-    msgpack (1.7.1)
+    msgpack (1.7.2)
     multi_xml (0.6.0)
     multipart-post (2.3.0)
     mustache (1.1.1)
