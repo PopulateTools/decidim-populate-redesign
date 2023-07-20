@@ -406,9 +406,9 @@ Decidim.configure do |config|
     "default-src" => %w('self' 'unsafe-inline'),
     "script-src" => %w('self' 'unsafe-inline' 'unsafe-eval'),
     "style-src" => %w('self' 'unsafe-inline'),
-    "img-src" => %w('self' *.hereapi.com data: metadecidim-redesign-staging.s3.eu-west-1.amazonaws.com),
+    "img-src" => %w('self' *.hereapi.com data: *.amazonaws.com),
     "font-src" => %w('self'),
-    "connect-src" => %w('self' *.hereapi.com *.jsdelivr.net metadecidim-redesign-staging.s3.eu-west1.amazonaws.com),
+    "connect-src" => %w('self' *.hereapi.com *.jsdelivr.net *.amazonaws.com),
     "frame-src" => %w('self' *.youtube.com),
     "media-src" => %w('self')
   }
