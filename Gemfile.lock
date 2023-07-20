@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 36f31857adbbcaa853d49a3848b164d77b08e53d
+  revision: 44637bd1f9bf9e52d45046c860f23146cb6019c0
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -271,7 +271,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.788.0)
+    aws-partitions (1.790.0)
     aws-sdk-core (3.178.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
