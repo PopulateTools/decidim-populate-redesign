@@ -408,7 +408,7 @@ Decidim.configure do |config|
     "style-src" => %w('self' 'unsafe-inline'),
     "img-src" => %w('self' *.hereapi.com data: metadecidim-redesign-staging.s3.eu-west-1.amazonaws.com),
     "font-src" => %w('self'),
-    "connect-src" => %w('self' *.hereapi.com *.jsdelivr.net),
+    "connect-src" => %w('self' *.hereapi.com *.jsdelivr.net metadecidim-redesign-staging.s3.eu-west1.amazonaws.com),
     "frame-src" => %w('self' *.youtube.com),
     "media-src" => %w('self')
   }
