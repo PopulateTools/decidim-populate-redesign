@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 44637bd1f9bf9e52d45046c860f23146cb6019c0
+  revision: 738d20bd12334e06c7db65a8f46df1e0a01018dc
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -161,8 +161,7 @@ GIT
       decidim-comments (= 0.28.0.dev)
       decidim-core (= 0.28.0.dev)
       decidim-verifications (= 0.28.0.dev)
-      origami (~> 2.1)
-      rexml (~> 3.2.5)
+      hexapdf (~> 0.32.0)
       wicked (~> 1.3)
       wicked_pdf (~> 2.1)
       wkhtmltopdf-binary (~> 0.12)
@@ -330,7 +329,7 @@ GEM
       actionpack (>= 5.0)
       cells (>= 4.1.6, < 5.0.0)
     charlock_holmes (0.7.7)
-    colorize (0.8.1)
+    cmdparse (3.0.7)
     commonmarker (0.23.9)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
@@ -437,6 +436,7 @@ GEM
       railties (>= 4.1, < 7.1)
     gemoji (3.0.1)
     geocoder (1.8.2)
+    geom2d (0.3.1)
     globalid (1.1.0)
       activesupport (>= 5.0)
     graphlient (0.5.0)
@@ -457,6 +457,10 @@ GEM
       sass (~> 3.4)
     hashdiff (1.0.1)
     hashie (5.0.0)
+    hexapdf (0.32.2)
+      cmdparse (~> 3.0, >= 3.0.3)
+      geom2d (~> 0.3)
+      openssl (>= 2.2.1)
     highline (2.1.0)
     hkdf (1.0.0)
     html-pipeline (2.14.3)
@@ -542,8 +546,6 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.14.5-arm64-darwin)
-      racc (~> 1.4)
     nokogiri (1.14.5-x86_64-linux)
       racc (~> 1.4)
     oauth (1.1.0)
@@ -583,8 +585,6 @@ GEM
       omniauth-oauth (~> 1.1)
       rack
     openssl (3.1.0)
-    origami (2.1.0)
-      colorize (~> 0.7)
     orm_adapter (0.5.0)
     paper_trail (12.3.0)
       activerecord (>= 5.2)
@@ -849,7 +849,6 @@ GEM
     zeitwerk (2.6.8)
 
 PLATFORMS
-  arm64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
