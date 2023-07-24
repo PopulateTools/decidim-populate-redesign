@@ -334,6 +334,7 @@ GEM
     crass (1.0.6)
     css_parser (1.14.0)
       addressable
+    dalli (3.2.4)
     date (3.3.3)
     date_validator (0.12.0)
       activemodel (>= 3)
@@ -854,6 +855,7 @@ DEPENDENCIES
   aws-sdk-s3
   bootsnap (~> 1.4)
   byebug (~> 11.0)
+  dalli
   decidim!
   decidim-conferences!
   decidim-dev!
