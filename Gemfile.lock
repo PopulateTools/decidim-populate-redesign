@@ -334,7 +334,7 @@ GEM
     crass (1.0.6)
     css_parser (1.14.0)
       addressable
-    dalli (3.2.4)
+    dalli (3.2.5)
     date (3.3.3)
     date_validator (0.12.0)
       activemodel (>= 3)
@@ -543,8 +543,6 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.14.5-arm64-darwin)
-      racc (~> 1.4)
     nokogiri (1.14.5-x86_64-linux)
       racc (~> 1.4)
     oauth (1.1.0)
@@ -848,7 +846,6 @@ GEM
     zeitwerk (2.6.8)
 
 PLATFORMS
-  arm64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
