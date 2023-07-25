@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 6c23bca35bfdf9a8e8fe61d88a6176838a1c65dd
+  revision: adf3ece96f4b880b6184333febd2119b9ae2706d
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -843,7 +843,7 @@ GEM
     wkhtmltopdf-binary (0.12.6.6)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.8)
+    zeitwerk (2.6.9)
 
 PLATFORMS
   x86_64-linux
