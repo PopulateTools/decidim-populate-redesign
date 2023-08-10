@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 092141c908a032828c4d6ea6c68afc5e8f9626de
+  revision: 5421693a1589ed8bb27b88f4463a6900a8829e0a
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -111,6 +111,7 @@ GIT
       decidim-comments (= 0.28.0.dev)
       decidim-core (= 0.28.0.dev)
     decidim-dev (0.28.0.dev)
+      bullet (~> 7.0)
       byebug (~> 11.0)
       capybara (~> 3.39)
       decidim (= 0.28.0.dev)
@@ -295,6 +296,9 @@ GEM
       msgpack (~> 1.2)
     browser (2.7.1)
     builder (3.2.4)
+    bullet (7.0.7)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     byebug (11.1.3)
     capybara (3.39.2)
       addressable
@@ -799,6 +803,7 @@ GEM
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
     unicode-display_width (2.4.2)
+    uniform_notifier (1.16.0)
     valid_email2 (4.0.6)
       activemodel (>= 3.2)
       mail (~> 2.5)
