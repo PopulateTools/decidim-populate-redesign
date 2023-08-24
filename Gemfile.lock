@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 0f17534c176c0bb379bb984ce6ed1341bc07a241
+  revision: 7f394b462f3192bc2325043818fded72deb333c2
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -841,7 +841,7 @@ GEM
     websocket-extensions (0.1.5)
     wicked (1.4.0)
       railties (>= 3.0.7)
-    wicked_pdf (2.6.3)
+    wicked_pdf (2.7.0)
       activesupport
     wisper (2.0.1)
     wisper-rspec (1.1.0)
