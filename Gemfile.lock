@@ -342,7 +342,7 @@ GEM
     date_validator (0.12.0)
       activemodel (>= 3)
       activesupport (>= 3)
-    decidim-bulletin_board (0.24.2)
+    decidim-bulletin_board (0.24.3)
       byebug (~> 11.0)
       graphlient (~> 0.5.0)
       jwt (~> 2.5.0)
