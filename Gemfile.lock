@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: ab520b68c0315801d591009ab6ce5fb38d71995a
+  revision: 93567850edb1e0b021fbec9c1a15fd1b65a0bfba
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -13,6 +13,7 @@ GIT
       decidim-comments (= 0.28.0.dev)
       decidim-core (= 0.28.0.dev)
       decidim-debates (= 0.28.0.dev)
+      decidim-design (= 0.28.0.dev)
       decidim-forms (= 0.28.0.dev)
       decidim-generators (= 0.28.0.dev)
       decidim-meetings (= 0.28.0.dev)
@@ -109,6 +110,8 @@ GIT
       wisper (~> 2.0)
     decidim-debates (0.28.0.dev)
       decidim-comments (= 0.28.0.dev)
+      decidim-core (= 0.28.0.dev)
+    decidim-design (0.28.0.dev)
       decidim-core (= 0.28.0.dev)
     decidim-dev (0.28.0.dev)
       bullet (~> 7.0)
