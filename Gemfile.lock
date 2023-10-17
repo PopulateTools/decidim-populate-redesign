@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 9428b79405964a43454b0eaccb5575c1f2a8a82a
+  revision: 4999b4e6f0a50aedb7a514e58a6d540ac44ee00b
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -13,7 +13,6 @@ GIT
       decidim-comments (= 0.28.0.dev)
       decidim-core (= 0.28.0.dev)
       decidim-debates (= 0.28.0.dev)
-      decidim-design (= 0.28.0.dev)
       decidim-forms (= 0.28.0.dev)
       decidim-generators (= 0.28.0.dev)
       decidim-meetings (= 0.28.0.dev)
@@ -110,8 +109,6 @@ GIT
       wisper (~> 2.0)
     decidim-debates (0.28.0.dev)
       decidim-comments (= 0.28.0.dev)
-      decidim-core (= 0.28.0.dev)
-    decidim-design (0.28.0.dev)
       decidim-core (= 0.28.0.dev)
     decidim-dev (0.28.0.dev)
       bullet (~> 7.0)
@@ -550,6 +547,8 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
+    nokogiri (1.14.5-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.14.5-x86_64-linux)
       racc (~> 1.4)
     oauth (1.1.0)
@@ -852,6 +851,7 @@ GEM
     zeitwerk (2.6.12)
 
 PLATFORMS
+  arm64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -883,4 +883,4 @@ RUBY VERSION
    ruby 3.1.1p18
 
 BUNDLED WITH
-   2.3.7
+   2.4.10
