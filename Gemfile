@@ -11,6 +11,7 @@ gem 'decidim-conferences', git: REPO, branch: BRANCH
 gem 'decidim-elections', git: REPO, branch: BRANCH
 gem 'decidim-initiatives', git: REPO, branch: BRANCH
 gem 'decidim-templates', git: REPO, branch: BRANCH
+gem 'decidim-design', git: REPO, branch: BRANCH
 
 gem 'bootsnap', '~> 1.4'
 
