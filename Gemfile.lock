@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: ac2aaddde35730474bdc02dea9f5d0e653f812f3
+  revision: c38108018cb4556cea503c5531ec00ba0b36dcdc
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -35,7 +35,7 @@ GIT
       devise_invitable (~> 2.0)
     decidim-api (0.28.0.dev)
       commonmarker (~> 0.23.0, >= 0.23.9)
-      graphql (~> 2.0)
+      graphql (~> 2.0.0)
       graphql-docs (~> 3.0.1)
       rack-cors (~> 1.0)
     decidim-assemblies (0.28.0.dev)
@@ -142,13 +142,13 @@ GIT
       webmock (~> 3.18)
       wisper-rspec (~> 1.0)
     decidim-elections (0.28.0.dev)
-      decidim-bulletin_board (~> 0.24.1)
+      decidim-bulletin_board (~> 0.24.4)
       decidim-core (= 0.28.0.dev)
       decidim-forms (= 0.28.0.dev)
       decidim-proposals (= 0.28.0.dev)
       rack-attack (~> 6.0)
-      voting_schemes-dummy (~> 0.24.1)
-      voting_schemes-electionguard (~> 0.24.1)
+      voting_schemes-dummy (~> 0.24.4)
+      voting_schemes-electionguard (~> 0.24.4)
     decidim-forms (0.28.0.dev)
       decidim-core (= 0.28.0.dev)
       wicked_pdf (~> 2.1)
@@ -445,8 +445,7 @@ GEM
       faraday (>= 1.0)
       faraday_middleware
       graphql-client
-    graphql (2.1.5)
-      racc (~> 1.4)
+    graphql (2.0.27)
     graphql-client (0.18.0)
       activesupport (>= 3.0)
       graphql
