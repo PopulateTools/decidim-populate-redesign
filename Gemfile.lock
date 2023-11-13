@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 28b6a7e922f9908a78cc61559df7b8b74d9c3937
+  revision: 86992f8de34f358a0e2ab5253ade81f39d9e0828
   branch: feature/redesign-staging
   specs:
     decidim (0.28.0.dev)
@@ -464,7 +464,6 @@ GEM
       geom2d (~> 0.3)
       openssl (>= 2.2.1)
     highline (2.1.0)
-    hkdf (1.0.0)
     html-pipeline (2.14.3)
       activesupport (>= 2)
       nokogiri (>= 1.4)
@@ -828,8 +827,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    web-push (3.0.0)
-      hkdf (~> 1.0)
+    web-push (3.0.1)
       jwt (~> 2.0)
       openssl (~> 3.0)
     webmock (3.19.1)
