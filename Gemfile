@@ -13,6 +13,8 @@ gem 'decidim-initiatives', git: REPO, branch: BRANCH
 gem 'decidim-templates', git: REPO, branch: BRANCH
 gem 'decidim-design', git: REPO, branch: BRANCH
 
+gem "decidim-processes_admin_stats", git: "https://github.com/PopulateTools/decidim-module-processes_admin_stats.git", branch: "main"
+
 gem 'bootsnap', '~> 1.4'
 
 gem "puma"
