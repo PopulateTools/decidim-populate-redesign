@@ -395,7 +395,7 @@ GEM
     excon (0.104.0)
     extended-markdown-filter (0.7.0)
       html-pipeline (~> 2.9)
-    factory_bot (6.4.0)
+    factory_bot (6.4.1)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.4.0)
       factory_bot (~> 6.4)
