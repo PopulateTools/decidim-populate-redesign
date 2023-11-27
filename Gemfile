@@ -6,6 +6,8 @@ ruby RUBY_VERSION
 REPO = 'https://github.com/decidim/decidim.git'
 BRANCH = 'feature/redesign-staging'
 
+DECIDIM_AWESOME_VERSION = { git: "https://github.com/decidim-ice/decidim-module-decidim_awesome.git" , branch: "redesign_admin-config" }
+
 gem 'decidim', git: REPO, branch: BRANCH
 gem 'decidim-conferences', git: REPO, branch: BRANCH
 gem 'decidim-elections', git: REPO, branch: BRANCH
@@ -14,6 +16,7 @@ gem 'decidim-templates', git: REPO, branch: BRANCH
 gem 'decidim-design', git: REPO, branch: BRANCH
 
 gem "decidim-processes_admin_stats", git: "https://github.com/PopulateTools/decidim-module-processes_admin_stats.git", branch: "main"
+gem "decidim-decidim_awesome", DECIDIM_AWESOME_VERSION
 
 gem 'bootsnap', '~> 1.4'
 

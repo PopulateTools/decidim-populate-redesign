@@ -7,6 +7,17 @@ GIT
       decidim-core (>= 0.26.0)
 
 GIT
+  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
+  revision: 3cac204e84dafb9cdbfb9427c6391949fb850d98
+  branch: redesign_admin-config
+  specs:
+    decidim-decidim_awesome (0.10.1)
+      decidim-admin (>= 0.26.0, < 0.28)
+      decidim-core (>= 0.26.0, < 0.28)
+      deface (>= 1.5)
+      sassc (~> 2.3)
+
+GIT
   remote: https://github.com/decidim/decidim.git
   revision: a7d94fb5d2103b45fc6089651d38bc463159b5d0
   branch: feature/redesign-staging
@@ -361,6 +372,12 @@ GEM
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
+    deface (1.9.0)
+      actionview (>= 5.2)
+      nokogiri (>= 1.6)
+      polyglot
+      railties (>= 5.2)
+      rainbow (>= 2.1.0)
     devise (4.9.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -608,6 +625,7 @@ GEM
     pg_search (2.3.6)
       activerecord (>= 5.2)
       activesupport (>= 5.2)
+    polyglot (0.3.5)
     premailer (1.21.0)
       addressable
       css_parser (>= 1.12.0)
@@ -760,6 +778,8 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.15.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -866,6 +886,7 @@ DEPENDENCIES
   dalli
   decidim!
   decidim-conferences!
+  decidim-decidim_awesome!
   decidim-design!
   decidim-dev!
   decidim-elections!
