@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
-  revision: 8df555924be24b29e1976bdc1696aa5ec4523419
+  revision: 7efb1e10b038b71a929f80ead3e37373e71e83b4
   branch: redesign_admin-config
   specs:
     decidim-decidim_awesome (0.10.1)
