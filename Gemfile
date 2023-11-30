@@ -6,7 +6,7 @@ ruby RUBY_VERSION
 REPO = 'https://github.com/decidim/decidim.git'
 BRANCH = 'feature/redesign-staging'
 
-DECIDIM_AWESOME_VERSION = { git: "https://github.com/decidim-ice/decidim-module-decidim_awesome.git" , branch: "redesign_admin-config" }
+DECIDIM_AWESOME_VERSION = { git: "https://github.com/decidim-ice/decidim-module-decidim_awesome.git" , branch: "redesign" }
 
 gem 'decidim', git: REPO, branch: BRANCH
 gem 'decidim-conferences', git: REPO, branch: BRANCH
