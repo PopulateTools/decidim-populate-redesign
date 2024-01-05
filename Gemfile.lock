@@ -219,6 +219,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    abbrev (0.1.2)
     actioncable (6.1.7.6)
       actionpack (= 6.1.7.6)
       activesupport (= 6.1.7.6)
@@ -489,7 +490,8 @@ GEM
       cmdparse (~> 3.0, >= 3.0.3)
       geom2d (~> 0.3)
       openssl (>= 2.2.1)
-    highline (2.1.0)
+    highline (3.0.0)
+      abbrev
     html-pipeline (2.14.3)
       activesupport (>= 2)
       nokogiri (>= 1.4)
