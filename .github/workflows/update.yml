@@ -5,8 +5,8 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 env:
-  RUBY_VERSION: 3.1.1
-  NODE_VERSION: 16.9.1
+  RUBY_VERSION: 3.2.2
+  NODE_VERSION: 18.17.1
   REDIS_URL:
 
 jobs:
