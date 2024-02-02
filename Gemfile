@@ -10,7 +10,6 @@ DECIDIM_AWESOME_VERSION = { git: "https://github.com/decidim-ice/decidim-module-
 
 gem 'decidim', git: REPO, branch: BRANCH
 gem 'decidim-conferences', git: REPO, branch: BRANCH
-gem 'decidim-elections', git: REPO, branch: BRANCH
 gem 'decidim-initiatives', git: REPO, branch: BRANCH
 gem 'decidim-templates', git: REPO, branch: BRANCH
 gem 'decidim-design', git: REPO, branch: BRANCH
