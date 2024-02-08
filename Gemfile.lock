@@ -1,23 +1,4 @@
 GIT
-  remote: https://github.com/PopulateTools/decidim-module-processes_admin_stats.git
-  revision: 43eb6491647dcd088cae6a5b657b82dba1c6ca55
-  branch: main
-  specs:
-    decidim-processes_admin_stats (0.28.0)
-      decidim-core (>= 0.26.0)
-
-GIT
-  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
-  revision: 0b870b7af09a25192d801ca3a8453c0745e50815
-  branch: redesign
-  specs:
-    decidim-decidim_awesome (0.10.2)
-      decidim-admin (>= 0.26.0, < 0.29)
-      decidim-core (>= 0.26.0, < 0.29)
-      deface (>= 1.5)
-      sassc (~> 2.3)
-
-GIT
   remote: https://github.com/decidim/decidim.git
   revision: 783a0af6c998ff6410d57dbdc595ce036e9fcb1a
   branch: feature/redesign-staging
@@ -274,12 +255,12 @@ GEM
       zeitwerk (~> 2.3)
     acts_as_list (1.1.0)
       activerecord (>= 4.2)
-    addressable (2.8.6)
+    addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     aws-eventstream (1.3.0)
-    aws-partitions (1.886.0)
-    aws-sdk-core (3.191.0)
+    aws-partitions (1.888.0)
+    aws-sdk-core (3.191.1)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
@@ -305,8 +286,9 @@ GEM
       smart_properties
     bigdecimal (3.1.6)
     bindex (0.8.1)
-    bootsnap (1.18.3)
+    bootsnap (1.10.3)
       msgpack (~> 1.2)
+    brakeman (6.1.0)
     browser (2.7.1)
     builder (3.2.4)
     bullet (7.1.6)
@@ -336,7 +318,7 @@ GEM
     charlock_holmes (0.7.7)
     cmdparse (3.0.7)
     commonmarker (0.23.10)
-    concurrent-ruby (1.2.3)
+    concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
     crack (0.4.6)
       bigdecimal
@@ -346,19 +328,12 @@ GEM
       addressable
     dalli (3.2.7)
       base64
-    date (3.3.4)
     date_validator (0.12.0)
       activemodel (>= 3)
       activesupport (>= 3)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
-    deface (1.9.0)
-      actionview (>= 5.2)
-      nokogiri (>= 1.6)
-      polyglot
-      railties (>= 5.2)
-      rainbow (>= 2.1.0)
     devise (4.9.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -372,6 +347,7 @@ GEM
       devise (>= 4.6)
     diff-lcs (1.5.1)
     diffy (3.4.2)
+    digest (3.1.1)
     doc2text (0.4.6)
       nokogiri (>= 1.13.2, < 1.15.0)
       rubyzip (~> 2.3.0)
@@ -404,7 +380,7 @@ GEM
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
-    ffi (1.16.3)
+    ffi (1.15.5)
     file_validators (3.0.0)
       activemodel (>= 3.2)
       mime-types (>= 1.0)
@@ -492,10 +468,10 @@ GEM
       letter_opener (~> 1.7)
       railties (>= 5.2)
       rexml
-    listen (3.8.0)
+    listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.22.0)
+    loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
@@ -508,27 +484,28 @@ GEM
     method_source (1.0.0)
     mime-types (3.5.2)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2023.1205)
+    mime-types-data (3.2024.0206)
     mini_magick (4.12.0)
     mini_mime (1.1.5)
-    minitest (5.21.2)
-    msgpack (1.7.2)
+    mini_portile2 (2.8.5)
+    minitest (5.20.0)
+    msgpack (1.4.5)
     multi_xml (0.6.0)
     net-http (0.4.1)
       uri
-    net-imap (0.4.9.1)
-      date
+    net-imap (0.2.3)
+      digest
       net-protocol
+      strscan
     net-pop (0.1.2)
       net-protocol
-    net-protocol (0.2.2)
+    net-protocol (0.2.1)
       timeout
-    net-smtp (0.3.4)
+    net-smtp (0.3.3)
       net-protocol
-    nio4r (2.7.0)
-    nokogiri (1.14.5-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.14.5-x86_64-linux)
+    nio4r (2.5.9)
+    nokogiri (1.14.5)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     oauth (1.1.0)
       oauth-tty (~> 1.0, >= 1.0.1)
@@ -571,8 +548,8 @@ GEM
     paper_trail (12.3.0)
       activerecord (>= 5.2)
       request_store (~> 1.1)
-    parallel (1.24.0)
-    parallel_tests (4.4.0)
+    parallel (1.22.1)
+    parallel_tests (4.2.0)
       parallel
     parser (3.3.0.5)
       ast (~> 2.4.1)
@@ -581,7 +558,6 @@ GEM
     pg_search (2.3.6)
       activerecord (>= 5.2)
       activesupport (>= 5.2)
-    polyglot (0.3.5)
     premailer (1.22.0)
       addressable
       css_parser (>= 1.12.0)
@@ -592,10 +568,10 @@ GEM
       premailer (~> 1.7, >= 1.7.9)
     psych (4.0.6)
       stringio
-    public_suffix (5.0.4)
-    puma (6.4.2)
+    public_suffix (5.0.1)
+    puma (6.3.1)
       nio4r (~> 2.0)
-    racc (1.7.3)
+    racc (1.7.2)
     rack (2.2.8)
     rack-attack (6.7.0)
       rack (>= 1.0, < 4)
@@ -662,25 +638,25 @@ GEM
     responders (3.1.1)
       actionpack (>= 5.2)
       railties (>= 5.2)
-    rexml (3.2.6)
-    rspec (3.12.0)
-      rspec-core (~> 3.12.0)
-      rspec-expectations (~> 3.12.0)
-      rspec-mocks (~> 3.12.0)
+    rexml (3.2.5)
+    rspec (3.13.0)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
     rspec-cells (0.3.9)
       cells (>= 4.0.0, < 6.0.0)
       rspec-rails (>= 3.0.0, < 6.2.0)
-    rspec-core (3.12.2)
-      rspec-support (~> 3.12.0)
-    rspec-expectations (3.12.3)
+    rspec-core (3.13.0)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.12.0)
+      rspec-support (~> 3.13.0)
     rspec-html-matchers (0.10.0)
       nokogiri (~> 1)
       rspec (>= 3.0.0.a)
-    rspec-mocks (3.12.6)
+    rspec-mocks (3.13.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.12.0)
+      rspec-support (~> 3.13.0)
     rspec-rails (6.1.1)
       actionpack (>= 6.1)
       activesupport (>= 6.1)
@@ -691,7 +667,7 @@ GEM
       rspec-support (~> 3.12)
     rspec-retry (0.6.2)
       rspec-core (> 3.3)
-    rspec-support (3.12.1)
+    rspec-support (3.13.0)
     rspec_junit_formatter (0.6.0)
       rspec-core (>= 2, < 4, != 2.12.0)
     rubocop (1.57.2)
@@ -735,8 +711,6 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sassc (2.4.0)
-      ffi (~> 1.9)
     selenium-webdriver (4.17.0)
       base64 (~> 0.2)
       rexml (~> 3.2, >= 3.2.5)
@@ -779,12 +753,13 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     stringio (3.1.0)
+    strscan (3.0.7)
     temple (0.10.3)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     thor (1.3.0)
     tilt (2.3.0)
-    timeout (0.4.1)
+    timeout (0.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
@@ -805,7 +780,7 @@ GEM
       rexml (~> 3.2)
     warden (1.2.9)
       rack (>= 2.0.9)
-    web-console (4.0.4)
+    web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
@@ -813,7 +788,7 @@ GEM
     web-push (3.0.1)
       jwt (~> 2.0)
       openssl (~> 3.0)
-    webmock (3.19.1)
+    webmock (3.20.0)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -831,38 +806,37 @@ GEM
     zeitwerk (2.6.12)
 
 PLATFORMS
-  arm64-darwin-21
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   aws-sdk-s3
   bootsnap (~> 1.4)
+  brakeman (~> 6.1)
   byebug (~> 11.0)
   dalli
   decidim!
   decidim-conferences!
-  decidim-decidim_awesome!
   decidim-design!
   decidim-dev!
   decidim-initiatives!
-  decidim-processes_admin_stats!
   decidim-templates!
   faker
-  letter_opener_web (~> 2)
+  letter_opener_web (~> 2.0)
   listen (~> 3.1)
   matrix
-  net-imap
-  net-pop
-  net-smtp
-  puma
+  net-imap (~> 0.2.3)
+  net-pop (~> 0.1.1)
+  net-smtp (~> 0.3.1)
+  parallel_tests (~> 4.2)
+  puma (>= 6.3.1)
   redis (~> 4.0)
   sidekiq
   spring (~> 2.0)
   spring-watcher-listen (~> 2.0)
-  web-console (= 4.0.4)
+  web-console (~> 4.2)
 
 RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.10
+   2.4.6

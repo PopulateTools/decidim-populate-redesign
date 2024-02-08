@@ -1,54 +1,51 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 ruby RUBY_VERSION
 REPO = 'https://github.com/decidim/decidim.git'
 BRANCH = 'feature/redesign-staging'
 
-DECIDIM_AWESOME_VERSION = { git: "https://github.com/decidim-ice/decidim-module-decidim_awesome.git" , branch: "redesign" }
+gem "decidim", git: REPO, branch: BRANCH
+gem "decidim-conferences", git: REPO, branch: BRANCH
+gem "decidim-design", git: REPO, branch: BRANCH
+gem "decidim-initiatives", git: REPO, branch: BRANCH
+gem "decidim-templates", git: REPO, branch: BRANCH
 
-gem 'decidim', git: REPO, branch: BRANCH
-gem 'decidim-conferences', git: REPO, branch: BRANCH
-gem 'decidim-initiatives', git: REPO, branch: BRANCH
-gem 'decidim-templates', git: REPO, branch: BRANCH
-gem 'decidim-design', git: REPO, branch: BRANCH
+gem "bootsnap", "~> 1.4"
 
-gem "decidim-processes_admin_stats", git: "https://github.com/PopulateTools/decidim-module-processes_admin_stats.git", branch: "main"
-gem "decidim-decidim_awesome", DECIDIM_AWESOME_VERSION
-
-gem 'bootsnap', '~> 1.4'
-
-gem "puma"
+gem "puma", ">= 6.3.1"
 gem "dalli"
 
 gem 'faker'
 
 gem 'sidekiq'
 
-gem 'letter_opener_web', '~> 2'
 gem "aws-sdk-s3", require: false
 
 gem "matrix"
-gem 'net-smtp'
-gem 'net-imap'
-gem 'net-pop'
 
 group :development, :test do
-  gem 'decidim-dev', git: REPO, branch: BRANCH
+  gem "byebug", "~> 11.0", platform: :mri
 
-  gem 'byebug', '~> 11.0', platform: :mri
+  gem "decidim-dev", git: REPO, branch: BRANCH
 
-  # Use latest simplecov from master until next version of simplecov is
-  # released (greather than 0.18.5)
-  # See https://github.com/decidim/decidim/issues/6230
+  gem "brakeman", "~> 6.1"
+  gem "net-imap", "~> 0.2.3"
+  gem "net-pop", "~> 0.1.1"
+  gem "net-smtp", "~> 0.3.1"
+  gem "parallel_tests", "~> 4.2"
 end
 
 group :development do
-  gem 'listen', '~> 3.1'
-  gem 'spring', '~> 2.0'
-  gem 'spring-watcher-listen', '~> 2.0'
-  gem 'web-console', '4.0.4'
+  gem "letter_opener_web", "~> 2.0"
+  gem "listen", "~> 3.1"
+  gem "spring", "~> 2.0"
+  gem "spring-watcher-listen", "~> 2.0"
+  gem "web-console", "~> 4.2"
+end
+
+group :production do
 end
 
 # Use Redis for Action Cable
