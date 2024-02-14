@@ -5,12 +5,13 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 REPO = 'https://github.com/decidim/decidim.git'
 BRANCH = 'feature/redesign-staging'
+DECIDIM_VERSION = { git: REPO, branch: BRANCH }
 
-gem "decidim", git: REPO, branch: BRANCH
-gem "decidim-conferences", git: REPO, branch: BRANCH
-gem "decidim-design", git: REPO, branch: BRANCH
-gem "decidim-initiatives", git: REPO, branch: BRANCH
-gem "decidim-templates", git: REPO, branch: BRANCH
+gem "decidim", DECIDIM_VERSION
+gem "decidim-conferences", DECIDIM_VERSION
+gem "decidim-design", DECIDIM_VERSION
+gem "decidim-initiatives", DECIDIM_VERSION
+gem "decidim-templates", DECIDIM_VERSION
 
 gem "bootsnap", "~> 1.4"
 
@@ -28,7 +29,7 @@ gem "matrix"
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "decidim-dev", git: REPO, branch: BRANCH
+  gem "decidim-dev", DECIDIM_VERSION
 
   gem "brakeman", "~> 6.1"
   gem "net-imap", "~> 0.2.3"
