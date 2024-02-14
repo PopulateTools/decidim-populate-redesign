@@ -5,7 +5,8 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 REPO = 'https://github.com/decidim/decidim.git'
 BRANCH = 'feature/redesign-staging'
-DECIDIM_VERSION = { git: REPO, branch: BRANCH }
+# DECIDIM_VERSION = { git: REPO, branch: BRANCH }
+DECIDIM_VERSION = "0.28.0"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
