@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_02_02_094612) do
+ActiveRecord::Schema.define(version: 2024_02_15_093637) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -332,7 +332,7 @@ ActiveRecord::Schema.define(version: 2024_02_02_094612) do
   end
 
   create_table "decidim_awesome_config", force: :cascade do |t|
-    t.string "var"
+    t.jsonb "var"
     t.jsonb "value"
     t.integer "decidim_organization_id"
     t.datetime "created_at", null: false
@@ -1528,7 +1528,7 @@ ActiveRecord::Schema.define(version: 2024_02_02_094612) do
     t.integer "comments_max_length", default: 1000
     t.jsonb "file_upload_settings"
     t.string "machine_translation_display_priority", default: "original", null: false
-    t.string "external_domain_allowlist", default: [], array: true
+    t.string "external_domain_whitelist", default: [], array: true
     t.boolean "enable_participatory_space_filters", default: true
     t.jsonb "content_security_policy", default: {}
     t.index ["host"], name: "index_decidim_organizations_on_host", unique: true
