@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/PopulateTools/decidim-module-anonymous_proposals
+  revision: 99e9693684cb376a171877fbe8b9fbff25fb7923
+  branch: release/0.28-stable
+  specs:
+    decidim-anonymous_proposals (0.27.0)
+      decidim-core (>= 0.27.0)
+      deface (~> 1.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -337,6 +346,12 @@ GEM
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
+    deface (1.9.0)
+      actionview (>= 5.2)
+      nokogiri (>= 1.6)
+      polyglot
+      railties (>= 5.2)
+      rainbow (>= 2.1.0)
     devise (4.9.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -563,6 +578,7 @@ GEM
     pg_search (2.3.6)
       activerecord (>= 5.2)
       activesupport (>= 5.2)
+    polyglot (0.3.5)
     premailer (1.22.0)
       addressable
       css_parser (>= 1.12.0)
@@ -821,6 +837,7 @@ DEPENDENCIES
   byebug (~> 11.0)
   dalli
   decidim (= 0.28.0)
+  decidim-anonymous_proposals!
   decidim-conferences (= 0.28.0)
   decidim-design (= 0.28.0)
   decidim-dev (= 0.28.0)
