@@ -8,6 +8,8 @@ BRANCH = 'feature/redesign-staging'
 # DECIDIM_VERSION = { git: REPO, branch: BRANCH }
 DECIDIM_VERSION = "0.28.0"
 DECIDIM_ANONYMOUS_PROPOSALS_VERSION = { git: "https://github.com/PopulateTools/decidim-module-anonymous_proposals", branch: "release/0.28-stable" }
+DECIDIM_AWESOME_VERSION = { git: "https://github.com/decidim-ice/decidim-module-decidim_awesome.git", branch: "develop" }
+DECIDIM_SIMPLE_PROPOSAL_VERSION = { git: "https://github.com/mainio/decidim-module-simple_proposal.git", branch: "develop" }
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
@@ -16,6 +18,8 @@ gem "decidim-initiatives", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-anonymous_proposals", DECIDIM_ANONYMOUS_PROPOSALS_VERSION
+gem "decidim-decidim_awesome", DECIDIM_AWESOME_VERSION
+gem "decidim-simple_proposal", DECIDIM_SIMPLE_PROPOSAL_VERSION
 
 gem "bootsnap", "~> 1.4"
 
