@@ -8,6 +8,16 @@ GIT
       deface (~> 1.5)
 
 GIT
+  remote: https://github.com/PopulateTools/decidim-module-extra_user_fields.git
+  revision: 7d94ee54b96d356cca9c778dfac0743c0a483088
+  branch: bump-0.28-phone-number
+  specs:
+    decidim-extra_user_fields (0.27.2)
+      country_select (~> 4.0)
+      decidim-core (>= 0.28)
+      deface (~> 1.5)
+
+GIT
   remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
   revision: 99b3885c54fb764c8b824ae3313ff6004eb3b3ee
   branch: develop
@@ -167,6 +177,13 @@ GEM
     commonmarker (0.23.10)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
+    countries (3.1.0)
+      i18n_data (~> 0.11.0)
+      sixarm_ruby_unaccent (~> 1.1)
+      unicode_utils (~> 1.4)
+    country_select (4.0.0)
+      countries (~> 3.0)
+      sort_alphabetical (~> 1.0)
     crack (1.0.0)
       bigdecimal
       rexml
@@ -473,6 +490,7 @@ GEM
       rails-i18n
       rainbow (>= 2.2.2, < 4.0)
       terminal-table (>= 1.5.1)
+    i18n_data (0.11.0)
     icalendar (2.10.1)
       ice_cube (~> 0.16)
     ice_cube (0.16.4)
@@ -779,10 +797,13 @@ GEM
       simplecov (~> 0.19)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
+    sixarm_ruby_unaccent (1.2.2)
     smart_properties (1.17.0)
     snaky_hash (2.0.1)
       hashie
       version_gem (~> 1.1, >= 1.1.1)
+    sort_alphabetical (1.1.0)
+      unicode_utils (>= 1.2.2)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -807,6 +828,7 @@ GEM
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
     unicode-display_width (2.5.0)
+    unicode_utils (1.4.0)
     uniform_notifier (1.16.0)
     uri (0.13.0)
     valid_email2 (4.0.6)
@@ -864,6 +886,7 @@ DEPENDENCIES
   decidim-decidim_awesome!
   decidim-design (= 0.28.0)
   decidim-dev (= 0.28.0)
+  decidim-extra_user_fields!
   decidim-initiatives (= 0.28.0)
   decidim-simple_proposal!
   decidim-templates (= 0.28.0)

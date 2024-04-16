@@ -21,6 +21,8 @@ gem "decidim-anonymous_proposals", DECIDIM_ANONYMOUS_PROPOSALS_VERSION
 gem "decidim-decidim_awesome", DECIDIM_AWESOME_VERSION
 gem "decidim-simple_proposal", DECIDIM_SIMPLE_PROPOSAL_VERSION
 
+gem "decidim-extra_user_fields", git: "https://github.com/PopulateTools/decidim-module-extra_user_fields.git", branch: "bump-0.28-phone-number"
+
 gem "bootsnap", "~> 1.4"
 
 gem "puma", ">= 6.3.1"
