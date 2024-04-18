@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/PopulateTools/decidim-module-extra_user_fields.git
-  revision: 7ce59fc17a13786fd6dd8f225ace8c4554e33fdd
+  revision: b420da179045e81afbb0efb1af36b227cf09dfac
   branch: bump-0.28-phone-number
   specs:
     decidim-extra_user_fields (0.28.0)
